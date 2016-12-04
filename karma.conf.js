@@ -1,4 +1,3 @@
-var configEnv = require('./config_env');
 var webpack = require('webpack');
 var path = require('path');
 
@@ -47,18 +46,8 @@ module.exports = function (config) {
           {test: /\.css$/, loader: 'style!css'},
           {test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=\.]+)?$/, loader: 'file-loader?name=fonts/[name].[ext]'},
           {test: /\.(jpe?g|png|gif)$/i, loader: "file-loader?name=img/[name].[ext]?[hash]"}
-        ],
-        /*postLoaders: [
-          {
-            test: /.ts$/,
-            exclude: /(node_modules|resources\/js\/vendor|.[sS]pec\.ts)/,
-            loader: 'istanbul-instrumenter'
-          }
-        ]*/
-      },
-      plugins: [
-        new webpack.DefinePlugin(configEnv)
-      ]
+        ]
+      }
     },
 
     webpackServer: {
