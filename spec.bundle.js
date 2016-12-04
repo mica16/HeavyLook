@@ -1,2 +1,2 @@
-let context = require.context('./client/corelogic', true, /\.ts$/);
+let context = require.context('./client', true, /spec\.ts$/);
 context.keys().forEach(context);

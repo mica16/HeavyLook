@@ -4,6 +4,7 @@
         "noImplicitAny": false,
         "sourceMap": true,
         "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "types": ["jasmine"]
     },
