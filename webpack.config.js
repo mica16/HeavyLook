@@ -15,7 +15,6 @@ module.exports = {
         loader: 'babel!ts-loader'
       },
       {test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'babel'},
-      {test: /\.html$/, loader: 'ngtemplate?relativeTo=' + path.resolve(__dirname, './client/') + '!html'},
       {test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=\.]+)?$/, loader: 'file-loader?name=fonts/[name].[ext]'},
       {test: /\.(jpe?g|png|gif)$/i, loader: "file-loader?name=img/[name].[ext]?[hash]"},
       {test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!sass')},

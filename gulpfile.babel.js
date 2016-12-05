@@ -39,7 +39,7 @@ let paths = {
     dest: path.join(__dirname, 'www')
 };
 
-gulp.task('webpack', ['clean'], (cb) => {
+gulp.task('prod', ['clean'], (cb) => {
     const config = require('./webpack.dist.config');
     config.entry.app = paths.entry;
 
