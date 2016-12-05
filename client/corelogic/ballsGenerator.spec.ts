@@ -8,7 +8,7 @@ describe('balls generator', () => {
         ballsGenerator = new BallsGenerator();
     });
 
-    it('should withSameWeight 8 balls having the same weight', () => {
+    it('should generate 8 balls having the same weight', () => {
         let balls = ballsGenerator.withSameWeight();
         expect(balls.filter(b => b.heaviest)).toEqual([]);
     });
