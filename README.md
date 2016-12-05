@@ -13,6 +13,6 @@ To run the solution locally, grab the source code and run:
 
 2) ```npm run test``` (to check that all is well set)
 
-3) ```gulp``` in development mode with livereload
+3) ```gulp``` to run in browser in development mode with livereload enabled
 
 4) ```gulp prod``` to package the solution for production in a 'www' folder at the root of the project. 
