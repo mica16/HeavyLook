@@ -1,0 +1,54 @@
+.container {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  li {
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+.ball-wrapper {
+  margin-top: 50px;
+  img {
+    vertical-align: middle;
+    width: 55px;
+    height: 55px;
+  }
+  .label {
+    position: relative;
+    top: -37px;
+  }
+}
+
+.balance-img-wrapper {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.buttons {
+  margin: 10px auto;
+  width: 200px;
+  background-color: red;
+  button {
+    &.execution-button {
+      float:left;
+    }
+    &.reset-button {
+      float:right;
+    }
+  }
+}
+
+.info {
+  clear:both;
+  margin-top: 60px;
+}
+
+.warning {
+  color: orange;
+}
