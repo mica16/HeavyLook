@@ -15,4 +15,4 @@ To run the solution locally, grab the source code and run:
 
 3) ```gulp``` to run in browser in development mode with livereload enabled
 
-4) ```gulp prod``` to package the solution for production in a 'www' folder at the root of the project. 
+4) ```gulp prod``` to package the solution for production in a 'www' folder at the root of the project
