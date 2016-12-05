@@ -41,7 +41,6 @@ module.exports = function (config) {
         loaders: [
           {test: /\.ts$/, loader: 'babel!ts-loader'},
           {test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'babel'},
-          {test: /\.html$/, loader: 'ngtemplate?relativeTo=' + path.resolve(__dirname, './client/') + '!html'},
           {test: /\.scss$/, loader: 'style!css!sass'},
           {test: /\.css$/, loader: 'style!css'},
           {test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=\.]+)?$/, loader: 'file-loader?name=fonts/[name].[ext]'},
