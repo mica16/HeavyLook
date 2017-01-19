@@ -11,7 +11,7 @@ import webpackHotMiddelware from 'webpack-hot-middleware';
 import colorsSupported      from 'supports-color';
 import historyApiFallback   from 'connect-history-api-fallback';
 
-var Server = require('karma').Server;
+const Server = require('karma').Server;
 let root = 'client';
 
 // helper method for resolving paths
@@ -66,7 +66,7 @@ gulp.task('serve', () => {
         'webpack-hot-middleware/client?reload=true'
     ].concat(paths.entry);
 
-    var compiler = webpack(config);
+    const compiler = webpack(config);
     serve({
         port: process.env.PORT || 3000,
         open: false,
